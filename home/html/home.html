@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meraki Solutions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Cabin+Sketch|Great+Vibes|Playfair+Display+SC|Poiret+One|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="../css/meraki-master.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/yenny.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/w3-colors-2017.css" />
+	   <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/demo1.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styleanim3.css" />
+    <link rel="stylesheet" type="text/css" href="../css/prob1.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../javascript/modernizr.custom.79639.js"></script>
+</head>
+
+<body>
+    <!--div id="intro-container" class="w3-sand" style="width: 100vw; height: 100vh;">
+        <div id="pre-container">
+            <div class="w3-teal" id="pre-0-0"><img src="../images/picaflor-geometria-0-0.png"></div>
+            <div class="w3-red" id="pre-1-0"><img src="../images/picaflor-geometria-1-0.png"></div>
+            <div class="w3-indigo" id="pre-0-1"><img src="../images/picaflor-geometria-0-1.png"></div>
+            <div class="w3-green" id="pre-1-1"><img src="../images/picaflor-geometria-1-1.png"></div>
+        </div>
+        <div id="logo-container" class="w3-black w3-border" style="opacity: 0;">
+            <img src="../images/picaflor-geometria.png">
+        </div>
+        <div id="text-logo-container" style="opacity: 0;">
+            <p id="text-logo-meraki" class="w3-text-black w3-center">Meraki</p>
+            <p id="text-logo-solutions" class="w3-text-black w3-center">Solutions</p>
+        </div>
+        <input id="btn-start" class="w3-btn w3-deep-purple w3-xxlarge w3-round-large w3-hover-teal" type="button" name="btn-start" value="Let's Start" style="display: none;">
+    </div-->
+
+    <!-- MAIN PAGE -->
+    <div id="main-container" class="w3-display-container" style="width: 100vw; display: block;overflow-x:none">
+        <div class="w3-container" style="height:100vh">
+          <canvas id="canvas" style="background-image: url('../images/greek.jpg');background-size: cover;"></canvas>
+          <div id="text">
+
+          </div>
+        </div>
+        <div class="w3-display-container">
+            <div class="w3-top" style="z-index: 99;">
+                <div id="meraki-navbar" class="w3-bar w3-wide w3-padding w3-text-white">
+                    <div class="w3-left w3-row">
+                        <div class="w3-half">
+                            <img id="meraki-logo" class="w3-black w3-round-large w3-margin w3-hover-shadow" src="../images/picaflor-geometria-15p.png" style="cursor:pointer; transition: 1s;">
+                        </div>
+
+                        <a id="meraki-text-logo" href="#home" class="meraki-font  w3-bar-item" style=" transition: 1s;"><b class="w3-xlarge">Meraki<br></b> Solutions</a>
+                        <a id="greek-text-logo" style="display:none; transition: 2s;" href="#home">
+                            <h3>μεράκι</h3>
+                        </a>
+                    </div>
+
+                    <div class="w3-right">
+                        <a href="#meraki-hosting" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Hosting</a>
+                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;">.</a>
+                        <a href="#meraki-uiux" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">UI/UX</a>
+                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;0px;">.</a>
+                        <a href="#meraki-technologies" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Solutions</a>
+                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;0px;">.</a>
+                        <a href="#meraki-about" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">About</a>
+                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;">.</a>
+                        <a href="#meraki-contact" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Contact</a>
+                        <!--a href="javascript:void(0)" class="w3-bar-item w3-margin-top w3-hide-large w3-hover-text-green w3-xxlarge" onclick="responsiveMenu()">&#9776;</a-->
+                        <a href="javascript:void(0)" class="w3-bar-item w3-margin-top w3-hide-large w3-hover-text-green w3-xxlarge"><div class="container" onclick="myFunction(this);responsiveMenu();">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="meraki-resp-menu" class="w3-bar-block w3-red w3-hide w3-hide-large w3-center w3-animate-zoom" style="transition: 2s;">
+                        <a href="#meraki-hosting" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Hosting</a>
+                        <a href="#meraki-uiux" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-right">UI/UX</a>
+                        <a href="#meraki-technologies" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Solutions</a>
+                        <a href="#meraki-about" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-right">About</a>
+                        <a href="#meraki-contact" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="meraki-top-btn" title="Go to top" class="w3-black w3-animate-zoom w3-hover-deep-purple w3-hover-shadow meraki-font w3-large w3-border-green w3-border">Return</button>
+        </div>
+
+        <div id="meraki-hosting" class="w3-container w3-black w3-padding-48">
+            <!--
+            ****************BASIC PLANS************************
+            -->
+            <div class="w3-row w3-padding w3-center">
+                <h1 class="w3-center meraki-font  w3-2017-marina w3-round-large">Meraki Hosting <span>...</span> <small>Wanna know about the Specific Features ? </small><br>
+                <a href="especif.html" target="_blank" class="w3-button w3-card-4 w3-deep-purple borde w3-border-left w3-border-right">Specs.</a></h1>
+                <h1 class="w3-center meraki-font-s1">Basic Plans</h1>
+
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center w3-hover-red" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Personal</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$5.<small>00</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">1GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">10 E-mail Accounts</h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <a href="PlanPersonal.html" target="_blank" class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</a>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">StartUp</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$7.<small>50</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">2GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">25 E-mail Accounts</h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <a href="PlanStartUp.html" target="_blank"  class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</a>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Ambitious</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$10.<small>00</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">4GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">35 E-mail Accounts</h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <a href="PlanAmbitious.html" target="_blank" class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</a>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+            </div>
+
+            <!--
+            ***************BUSSINES PLANS**********************
+            -->
+
+            <div class="w3-row w3-padding w3-center">
+                <h1 class="w3-center meraki-font-s1">Bussines Plans</h1>
+
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Tier I</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$13.<small>00</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">6GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">Unlimited E-mail Accounts</h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <a href="PlanTierI.html" target="_blank"  class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</a>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Tier II</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$16.<small>50</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">10GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">Unlimited E-mail Accounts</h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <a href="PlanTierII.html" target="_blank" class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</a>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Tier III</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$22.<small>00</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">15GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">Unlimited E-mail Accounts</h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <a href="PlanTierIII.html" target="_blank" class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</a>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+            </div>
+            <!--
+            *************ELITE PLANS*************
+            -->
+            <div class="w3-row w3-padding w3-center">
+                <h1 class="w3-center meraki-font-s1">Elite Plans</h1>
+
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Elite I</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$40.<small>00</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">30GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">Unlimited E-mail Accounts</h5>
+                        <h5 class="meraki-font-s5">Free Domain</h5>
+                        <h5 class="meraki-font-s5">Free ID Protection</h5>
+                        <h5 class="meraki-font-s5"></h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <button class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</button>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Elite II</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$55.<small>50</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">40GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited Bandwidth</h5>
+                        <h5 class="meraki-font-s5">Unlimited E-mail Accounts</h5>
+                        <h5 class="meraki-font-s5">Free Domain</h5>
+                        <h5 class="meraki-font-s5">Free ID Protection</h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <button class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</button>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+                <div class="w3-col w3-mobile w3-center" style="width:20%;">
+                    <div class="w3-container w3-sand w3-border-bottom w3-hover-border green" style="border-radius: 10px 10px 0px 0px;">
+                        <h2 class="meraki-font ">Elite III</h2>
+                    </div>
+                    <div class="w3-container w3-white w3-border-bottom">
+                        <h3 class="meraki-font"><b>$70.<small>00</small><sub>/mo.</sub></h3>
+                    </div>
+                    <div class="w3-container w3-sand w3-border-bottom">
+                        <h5 class="meraki-font-s5">55GB SSD RAID 10</h5>
+                        <h5 class="meraki-font-s5">Unlimited (All)</h5>
+                        <h5 class="meraki-font-s5">Free Domain</h5>
+                        <h5 class="meraki-font-s5">Free ID Protection</h5>
+                        <h5 class="meraki-font-s5">Free SSL Cert.</h5>
+                        <h5 class="meraki-font-s5"></h5>
+                    </div>
+                    <div class="w3-container w3-sand w3-padding" style="border-radius: 0px 0px 10px 10px;">
+                        <button class="meraki-font w3-btn w3-deep-purple w3-round-large">read more</button>
+                    </div>
+                </div>
+                <div class="w3-col w3-mobile w3-center" style="width:10%;"><p><i class="fa fa-connectdevelop"></i></p></div>
+            </div>
+        </div>
+
+        <div class="mainview-uiux parallax-uiux w3-display-container w3-center">
+            <h1 class="meraki-font w3-display-middle w3-block w3-hide-small" style="background: rgba(0,100,0,0.7); font-size: 60px;">
+                <strong>UI/UX <small>Development</small></strong>
+            </h1>
+            <h1 class="meraki-font w3-display-middle w3-block w3-hide-large w3-hide-medium" style="background: rgba(0,0,0,0.5); font-size: 30px; height: 100%">
+                <strong>UI/UX <small>Development</small></strong>
+            </h1>
+        </div>
+
+        <div id="meraki-uiux" class="w3-container w3-row w3-red" style="padding-left:0px;padding-right:0px; height:600px; width: 100vw;">
+          <div class="w3-half w3-green" style="height:100%;overflow-x:auto;padding-top:100px;padding-left:50px;">
+          			<!-- Codrops top bar -->
+          		<section class="main">
+
+          				<div id="sb-container" class="sb-container">
+
+          					<div>
+          						<span class="sb-icon icon-cog"></span>
+          						<h4><span>All Settings</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-flight"></span>
+          						<h4><span>User Modes</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-eye"></span>
+          						<h4><span>Browse All</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-install"></span>
+          						<h4><span>Install App</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-bag"></span>
+          						<h4><span>Productivity</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-globe"></span>
+          						<h4><span>All Options</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-picture"></span>
+          						<h4><span>User Images</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-video"></span>
+          						<h4><span>User Videos</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-download"></span>
+          						<h4><span>Download App</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-mobile"></span>
+          						<h4><span>Mobile Theme</span></h4>
+          					</div>
+          					<div>
+          						<span class="sb-icon icon-camera"></span>
+          						<h4><span>Digital App</span></h4>
+          					</div>
+          					<div>
+          						<h4><span>Profile</span></h4>
+          						<h5><span>Meraki &hearts;</span></h5>
+          					</div>
+          				</div><!-- sb-container -->
+          			</section>
+
+              <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+          		<script type="text/javascript" src="../javascript/jquery.swatchbook.js"></script>
+          		<script type="text/javascript">
+          			$(function() {
+          				$( '#sb-container' ).swatchbook();
+          			});
+          		</script>
+
+          </div>
+          <div class="w3-half w3-row w3-white"style="height:100%">
+            <div class="w3-row w3-blue" style="height:50%">
+
+            </div>
+            <div class="w3-row demo1" style="height:50%;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="loader">
+                                <div class="box-1">
+                                    <div class="box-2">
+                                        <div class="box-3">
+                                            <div class="box-4">
+                                                <div class="box-5">
+                                                    <div class="box-6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="loader-inner">M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div id="meraki-technologies" class="w3-container w3-purple w3-margin-0" style="height:600px; width: 100vw;">
+            <p>SOLUTIONS</p>
+        </div>
+        <div id="meraki-about" class="w3-container w3-amber w3-margin-0" style="height:600px; width: 100vw;">
+            <p>ABOUT</p>
+        </div>
+        <div id="meraki-about" class="w3-container w3-pink w3-margin-0" style="height:600px; width: 100vw;">
+            <p>CONTACT</p>
+        </div>
+        <div id="meraki-contact" class="w3-container w3-black w3-margin-0" style="height:200px; width: 100vw;">
+            <p>FOOTER</p>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    /*
+    =============== jQuery ===============
+    */
+    $(document).ready(function() {
+        $("#btn-start").delay(9000).fadeIn();
+    });
+
+    $(document).ready(function() {
+
+        $("#btn-start").click(function() {
+            $("#intro-container").delay("fast").fadeOut();
+            $("#main-container").delay("slow").fadeIn();
+        })
+    });
+
+    /*var images = ['bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg', 'bg-4.jpg', 'bg-5.jpg', 'bg-6.jpg', 'bg-7.jpg'];
+    $(document).ready(function() {
+        $(".mainview").css("background-image", "url(../images/" + images[Math.round(Math.random() * images.length)]) + ")";
+    });*/
+
+    $(document).ready(function() {
+        $(".meraki-logo").click(function() {
+            window.location.href = "#home";
+        })
+    });
+    /*
+    =============== JAVASCRIPT ===============
+    */
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function myFunction(x) {
+    x.classList.toggle("change");
+    }
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById("meraki-top-btn").style.display = "block";
+            /*document.getElementById("meraki-navbar").style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5))";*/
+            document.getElementById("greek-text-logo").style.display = "block";
+            document.getElementById("meraki-logo").style.display = "none";
+            document.getElementById("meraki-text-logo").style.display = "none";
+
+        } else {
+            document.getElementById("meraki-top-btn").style.display = "none";
+            /*document.getElementById("meraki-navbar").style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0))";*/
+            document.getElementById("greek-text-logo").style.display = "none";
+            document.getElementById("meraki-logo").style.display = "block";
+            document.getElementById("meraki-text-logo").style.display = "block";
+        }
+    }
+
+    function responsiveMenu() {
+        var x = document.getElementById("meraki-resp-menu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Chrome, Safari and Opera
+        document.documentElement.scrollTop = 0; // For IE and Firefox
+    }
+</script>
+<script src="../javascript/prob1.js"></script>
+
+</html>

@@ -1,0 +1,14 @@
+[01-Jun-2017 18:03:29 UTC] PHP Warning:  require_once(../libraries/MPDF57/mpdf.php): failed to open stream: No such file or directory in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 18:03:29 UTC] PHP Fatal error:  require_once(): Failed opening required '../libraries/MPDF57/mpdf.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 20:48:25 UTC] PHP Warning:  require_once(../lib/pdf/mpdf.php): failed to open stream: No such file or directory in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 20:48:25 UTC] PHP Fatal error:  require_once(): Failed opening required '../lib/pdf/mpdf.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 20:48:32 UTC] PHP Warning:  require_once(../lib/pdf/mpdf.php): failed to open stream: No such file or directory in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 20:48:32 UTC] PHP Fatal error:  require_once(): Failed opening required '../lib/pdf/mpdf.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:22 UTC] PHP Warning:  require_once(../lib/pdf/mpdf.php): failed to open stream: No such file or directory in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:22 UTC] PHP Fatal error:  require_once(): Failed opening required '../lib/pdf/mpdf.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:37 UTC] PHP Warning:  require_once(../lib/pdf/mpdf.php): failed to open stream: No such file or directory in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:37 UTC] PHP Fatal error:  require_once(): Failed opening required '../lib/pdf/mpdf.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:38 UTC] PHP Warning:  require_once(../lib/pdf/mpdf.php): failed to open stream: No such file or directory in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:38 UTC] PHP Fatal error:  require_once(): Failed opening required '../lib/pdf/mpdf.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:39 UTC] PHP Warning:  require_once(../lib/pdf/mpdf.php): failed to open stream: No such file or directory in /home/merakiso/public_html/home/php/reporte.php on line 2
+[01-Jun-2017 21:04:39 UTC] PHP Fatal error:  require_once(): Failed opening required '../lib/pdf/mpdf.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/merakiso/public_html/home/php/reporte.php on line 2

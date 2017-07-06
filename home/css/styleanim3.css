@@ -1,0 +1,171 @@
+.demo1{ background: #e1e1d8; }
+.loader{
+    width: 210px;
+    height: 210px;
+    margin: 50px auto;
+    position: relative;
+}
+.loader .box-1{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #f262d3;
+    border-left-color: #f262d3;
+    border-bottom-color: #e1e1d8;
+    border-right-color: #e1e1d8;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: loading-1 1.8s linear infinite;
+    animation: loading-1 1.8s linear infinite;
+}
+.loader .box-2{
+    display: flex;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #e1e1d8;
+    border-left-color: #e1e1d8;
+    border-bottom-color: #9599f2;
+    border-right-color: #9599f2;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: loading-2 1.2s linear infinite;
+    animation: loading-2 1.2s linear infinite;
+}
+.loader .box-3{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #3dd94a;
+    border-left-color: #3dd94a;
+    border-bottom-color: #e1e1d8;
+    border-right-color: #e1e1d8;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: loading-1 1.4s linear infinite;
+    animation: loading-1 1.4s linear infinite;
+}
+.loader .box-4{
+    display: flex;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #e1e1d8;
+    border-left-color: #e1e1d8;
+    border-bottom-color: #f262d3;
+    border-right-color: #f262d3;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: loading-2 1.6s linear infinite;
+    animation: loading-2 1.6s linear infinite;
+}
+.loader .box-5{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #ff7d00;
+    border-left-color: #ff7d00;
+    border-right-color: #e1e1d8;
+    border-bottom-color: #e1e1d8;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: loading-1 2s linear infinite;
+    animation: loading-1 2s linear infinite;
+}
+.loader .box-6{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #e1e1d8;
+    border-left-color: #e1e1d8;
+    border-bottom-color: #9599f2;
+    border-right-color: #9599f2;
+    -webkit-animation: loading-2 2.3s linear infinite;
+    animation: loading-2 2.3s linear infinite;
+}
+.loader .loader-inner{
+    width: 100%;
+    height: 100%;
+    font-size: 2.3em;
+    color: #f262d3;
+    line-height: 200px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loading-3 8s .5s infinite;
+    animation: loading-3 8s .5s infinite;
+}
+@-webkit-keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes loading-3{
+    10%{ color: #f262d3; }
+    20%{ color: #9599f2; }
+    40%{ color: #3dd94a; }
+    60%{ color: #f262d3; }
+    80%{ color: #ff7d00; }
+    90%{ color: #9599f2; }
+    100%{ color: #f262d3; }
+}
+@keyframes loading-3{
+    10%{ color: #f262d3; }
+    20%{ color: #9599f2; }
+    40%{ color: #3dd94a; }
+    60%{ color: #f262d3; }
+    80%{ color: #ff7d00; }
+    90%{ color: #9599f2; }
+    100%{ color: #f262d3; }
+}

@@ -1,0 +1,33 @@
+.gradiente{
+  background: linear-gradient(to right, #00cc66 0%, #66ff33 100%);
+  color:white;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.imagen1{
+   background-image: url("../images/1511.jpg");
+   background-size: 100% 100%;
+   padding-top: 3%;
+   padding-right: 10%;
+   padding-left: 10%;
+   padding-bottom: 4%;
+}
+.imagen2{
+   background-image: url("../images/1512.jpg");
+   background-size: 100% 100%;
+}
+.letra_w{
+  color:white;
+  font-size: 45px;
+}
+.letra_grande{
+  font-size: 35px;
+}
+.borde{
+  border-radius: 30px;
+
+}
+.pad_0{
+  padding: 0px 0px 0px 0px;
+}

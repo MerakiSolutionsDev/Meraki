@@ -1,0 +1,55 @@
+body {
+
+	background: #fff;
+}
+
+#Titulo {
+    color: #999999;
+    font-family: 'Raleway', sans-serif;
+
+}
+.center {
+    text-align: center;
+}
+.letter_concept{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	background: #fff;
+}
+.margin_1 {
+    margin-right: 120px 15%;
+		margin-left: 120px 15%;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+}
+.tabla{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 110%;
+}
+th, td {
+    padding: 8px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+
+}
