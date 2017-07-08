@@ -10,17 +10,6 @@ body {
 	background: #000;
 }
 
-a {
-	text-decoration: none;
-	color: #fff;
-	outline: none;
-}
-
-a:hover,
-a:focus {
-	color: #fff;
-}
-
 .hidden {
 	position: absolute;
 	overflow: hidden;

@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ana.css">
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Cabin+Sketch|Great+Vibes|Playfair+Display+SC|Poiret+One|Yellowtail" rel="stylesheet">
     <link rel="stylesheet" href="../css/meraki-master.css">
     <link rel="stylesheet" href="../css/animate.css">
@@ -19,81 +20,56 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/styleanim3.css" />
     <link rel="stylesheet" type="text/css" href="../css/prob1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="../javascript/modernizr.custom.79639.js"></script>
 </head>
 
 <body>
-    <!--div id="intro-container" class="w3-sand" style="width: 100vw; height: 100vh;">
-        <div id="pre-container">
-            <div class="w3-teal" id="pre-0-0"><img src="../images/picaflor-geometria-0-0.png"></div>
-            <div class="w3-red" id="pre-1-0"><img src="../images/picaflor-geometria-1-0.png"></div>
-            <div class="w3-indigo" id="pre-0-1"><img src="../images/picaflor-geometria-0-1.png"></div>
-            <div class="w3-green" id="pre-1-1"><img src="../images/picaflor-geometria-1-1.png"></div>
-        </div>
-        <div id="logo-container" class="w3-black w3-border" style="opacity: 0;">
-            <img src="../images/picaflor-geometria.png">
-        </div>
-        <div id="text-logo-container" style="opacity: 0;">
-            <p id="text-logo-meraki" class="w3-text-black w3-center">Meraki</p>
-            <p id="text-logo-solutions" class="w3-text-black w3-center">Solutions</p>
-        </div>
-        <input id="btn-start" class="w3-btn w3-deep-purple w3-xxlarge w3-round-large w3-hover-teal" type="button" name="btn-start" value="Let's Start" style="display: none;">
-    </div-->
 
     <!-- MAIN PAGE -->
-    <div id="main-container" class="w3-display-container" style="width: 100vw; display: block;overflow-x:none">
+    <div id="main-container" class="w3-display-container"  style="width: 100vw; display: block;overflow-x:none">
+      <div class="w3-ana-606 w3-top w3-bar" style="padding-bottom:10px;padding-left:5px;padding-top:10px;">
+        <div class="w3-left w3-row">
+         <img src="../images/logo.png" class="w3-round-small" alt="Norway" style="width:160px">
+         </div>
+         <div class="w3-right">
+             <a href="#meraki-hosting" class="w3-bar-item  w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Hosting</a>
+             <a class="w3-bar-item  w3-hide-medium w3-hide-small" style="padding: 10px 5px;">.</a>
+             <a href="#meraki-uiux" class="w3-bar-item  w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">UI/UX</a>
+             <a class="w3-bar-item  w3-hide-medium w3-hide-small" style="padding: 10px 5px;0px;">.</a>
+             <a href="#meraki-technologies" class="w3-bar-item  w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Solutions</a>
+             <a class="w3-bar-item w3-hide-medium w3-hide-small" style="padding: 10px 5px;0px;">.</a>
+             <a href="#meraki-about" class="w3-bar-item  w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">About</a>
+             <a class="w3-bar-item  w3-hide-medium w3-hide-small" style="padding: 10px 5px;">.</a>
+             <a href="#meraki-contact" class="w3-bar-item  w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small" style="margin-right:5px;">Contact</a>
+             <a href="javascript:void(0)" class="w3-bar-item w3-hide-large w3-hover-text-green w3-xxlarge"><div class="container" onclick="myFunction(this);responsiveMenu();">
+                 <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+                 </div>
+             </a>
+         </div>
+         <div id="meraki-resp-menu" class="w3-bar-block w3-red w3-hide w3-hide-large w3-center w3-animate-zoom" style="transition: 2s;">
+             <a href="#meraki-hosting" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Hosting</a>
+             <a href="#meraki-uiux" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-right">UI/UX</a>
+             <a href="#meraki-technologies" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Solutions</a>
+             <a href="#meraki-about" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-right">About</a>
+             <a href="#meraki-contact" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Contact</a>
+         </div>
+      </div>
+
+
         <div class="w3-container" style="height:100vh">
-          <canvas id="canvas" style="background-image: url('../images/greek.jpg');background-size: cover;"></canvas>
-          <div id="text">
-
-          </div>
-        </div>
-        <div class="w3-display-container">
-            <div class="w3-top" style="z-index: 99;">
-                <div id="meraki-navbar" class="w3-bar w3-wide w3-padding w3-text-white">
-                    <div class="w3-left w3-row">
-                        <div class="w3-half">
-                            <img id="meraki-logo" class="w3-black w3-round-large w3-margin w3-hover-shadow" src="../images/picaflor-geometria-15p.png" style="cursor:pointer; transition: 1s;">
-                        </div>
-
-                        <a id="meraki-text-logo" href="#home" class="meraki-font  w3-bar-item" style=" transition: 1s;"><b class="w3-xlarge">Meraki<br></b> Solutions</a>
-                        <a id="greek-text-logo" style="display:none; transition: 2s;" href="#home">
-                            <h3>μεράκι</h3>
-                        </a>
-                    </div>
-
-                    <div class="w3-right">
-                        <a href="#meraki-hosting" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Hosting</a>
-                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;">.</a>
-                        <a href="#meraki-uiux" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">UI/UX</a>
-                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;0px;">.</a>
-                        <a href="#meraki-technologies" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Solutions</a>
-                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;0px;">.</a>
-                        <a href="#meraki-about" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">About</a>
-                        <a class="w3-bar-item w3-margin-top w3-hide-medium w3-hide-small" style="padding: 10px 5px;">.</a>
-                        <a href="#meraki-contact" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-hide-medium w3-hide-small">Contact</a>
-                        <!--a href="javascript:void(0)" class="w3-bar-item w3-margin-top w3-hide-large w3-hover-text-green w3-xxlarge" onclick="responsiveMenu()">&#9776;</a-->
-                        <a href="javascript:void(0)" class="w3-bar-item w3-margin-top w3-hide-large w3-hover-text-green w3-xxlarge"><div class="container" onclick="myFunction(this);responsiveMenu();">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div id="meraki-resp-menu" class="w3-bar-block w3-red w3-hide w3-hide-large w3-center w3-animate-zoom" style="transition: 2s;">
-                        <a href="#meraki-hosting" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Hosting</a>
-                        <a href="#meraki-uiux" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-right">UI/UX</a>
-                        <a href="#meraki-technologies" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Solutions</a>
-                        <a href="#meraki-about" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-right">About</a>
-                        <a href="#meraki-contact" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Contact</a>
-                    </div>
-                </div>
-            </div>
-            <button onclick="topFunction()" id="meraki-top-btn" title="Go to top" class="w3-black w3-animate-zoom w3-hover-deep-purple w3-hover-shadow meraki-font w3-large w3-border-green w3-border">Return</button>
+          <canvas id="canvas" style="background-image: url('../images/2.jpg');width: 100%;height: auto;background-size: cover;"></canvas>
         </div>
 
+        <h1>This pen is
+          <span
+             class="txt-rotate"
+             data-period="2000"
+             data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+        </h1>
         <div id="meraki-hosting" class="w3-container w3-black w3-padding-48">
             <!--
             ****************BASIC PLANS************************
@@ -436,30 +412,13 @@
     /*
     =============== JAVASCRIPT ===============
     */
-    window.onscroll = function() {
-        scrollFunction()
-    };
+
 
     function myFunction(x) {
     x.classList.toggle("change");
     }
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            document.getElementById("meraki-top-btn").style.display = "block";
-            /*document.getElementById("meraki-navbar").style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5))";*/
-            document.getElementById("greek-text-logo").style.display = "block";
-            document.getElementById("meraki-logo").style.display = "none";
-            document.getElementById("meraki-text-logo").style.display = "none";
 
-        } else {
-            document.getElementById("meraki-top-btn").style.display = "none";
-            /*document.getElementById("meraki-navbar").style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0))";*/
-            document.getElementById("greek-text-logo").style.display = "none";
-            document.getElementById("meraki-logo").style.display = "block";
-            document.getElementById("meraki-text-logo").style.display = "block";
-        }
-    }
 
     function responsiveMenu() {
         var x = document.getElementById("meraki-resp-menu");

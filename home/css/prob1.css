@@ -7,7 +7,7 @@ body {
 #canvas, #text {
 	position: absolute;
 	display: block;
-	top: 0;
+	top: 65px;
 	left: 0;
 	z-index: -1;
 }
