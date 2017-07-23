@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Meraki Solutions Dev</title>
+    <title>Meraki Solutions</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/w3.css">
@@ -11,17 +11,19 @@
     <link rel="stylesheet" href="../css/meraki-master.css">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/yenny.css">
+    <link rel="shortcut icon" href="esc.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../css/w3-colors-2017.css" />
-	   <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+	  <link rel="stylesheet" type="text/css" href="../css/demo.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/demo1.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/styleanim3.css" />
-    <link rel="stylesheet" type="text/css" href="../css/prob1.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="../javascript/modernizr.custom.79639.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/mirror.css" />
+		<script>document.documentElement.className = 'js';</script>
 </head>
 
 <body>
@@ -57,10 +59,27 @@
              <a href="#meraki-contact" class="w3-bar-item w3-margin-top w3-hover-deep-purple w3-round-large w3-animate-left">Contact</a>
          </div>
       </div>
-
-
-        <div class="w3-container" style="height:100vh">
-          <canvas id="canvas" style="background-image: url('../images/2.jpg');width: 100%;height: auto;background-size: cover;"></canvas>
+        <div class="demo-1" style="height:100vh">
+          <main>
+            <section class="content content--full">
+            
+              <div class="slideshow">
+                <div class="slide" style="background-color:rgb(59,28,15)">
+                  <div class="mirror" data-visible-area="0.85">
+                    <div class="mirror__side mirror__side--one">
+                      <img class="mirror__img" src="../images/3.png" alt="Some image" />
+                    </div>
+                    <div class="mirror__side mirror__side--two">
+                      <img class="mirror__img" src="../images/3.png" alt="Some image" />
+                    </div>
+                  </div>
+                  <h2 class="slide__title">Te damos las armas para la Revolucion Tecnologica</h2>
+                </div>
+                <nav class="slideshow__nav">
+                </nav>
+              </div><!-- /slideshow -->
+            </section>
+          </main>
         </div>
 
         <div id="meraki-hosting" class="w3-container w3-black w3-padding-48">
@@ -376,6 +395,10 @@
     </div>
 
 </body>
+<script src="../javascript/imagesloaded.pkgd.min.js"></script><!-- Mirror -->
+<script src="../javascript/anime.min.js"></script><!-- Mirror -->
+<script src="../javascript/mirrorFx.js"></script><!-- Mirror -->
+<script src="../javascript/slideshow.js"></script><!-- Mirror -->
 <script type="text/javascript">
     /*
     =============== jQuery ===============
@@ -405,13 +428,9 @@
     /*
     =============== JAVASCRIPT ===============
     */
-
-
     function myFunction(x) {
     x.classList.toggle("change");
     }
-
-
 
     function responsiveMenu() {
         var x = document.getElementById("meraki-resp-menu");
@@ -427,7 +446,31 @@
         document.body.scrollTop = 0; // For Chrome, Safari and Opera
         document.documentElement.scrollTop = 0; // For IE and Firefox
     }
+/*--------------------------------------Mirror-----------------------------------------*/
+(function() {
+
+  function init() {
+    new Slideshow(document.querySelector('.slideshow'));
+  }
+
+  // Fake loading time..
+  var startTime = new Date().getTime();
+  imagesLoaded(document.querySelector('main'), function() {
+    var elapsed = new Date().getTime() - startTime,
+      initFn = function() {
+        document.body.classList.remove('loading');
+        setTimeout(init, 50);
+      };
+
+    if( elapsed > 2000) {
+      initFn();
+    }
+    else {
+      setTimeout(initFn, 10);
+    }
+  });
+
+})();
 </script>
-<script src="../javascript/prob1.js"></script>
 
 </html>
